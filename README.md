@@ -1,2 +1,17 @@
-# Network-Installation-Proposal---AWS-Integration
-Enterprise network design from Network Installation Proposal, implemented in AWS — VPC, subnets, EC2, IAM, Client VPN, and Security Groups mapped from an on-premise design.
+### Rough Notes 
+- VPC
+  - Network VPC
+- Subnets
+  - Admin-Subnet-10 > 10.0.10.0/24
+  - Executive-Subnet-20 > 10.0.20.0/24
+  - Marketing-Subnet-30 > 10.0.30.0/24
+  - Sales-Subnet-40 > 10.0.40.0/24
+  - IT-Subnet-50 > 10.0.50.0/24
+  - Accounting-Subnet-60 > 10.0.60.0/24
+- Route Tables
+  - Admin-RT > Admin-Subnet-10
+  - Executive-RT > Executive-Subnet-20
+  - AllDepartment-RT > Marketing-Subnet-30, Sales-Subnet-40, Accounting-Subnet-60
+  - IT-RT > IT-Subnet-50
+- Internet Gateway
+  - All-Department-IGW > Network VPC > Attached to all RTs
