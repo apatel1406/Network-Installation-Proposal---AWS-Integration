@@ -15,3 +15,10 @@
   - IT-RT > IT-Subnet-50
 - Internet Gateway
   - All-Department-IGW > Network VPC > Attached to all RTs
+- Network ACL
+  - Admin-ACL > Admin-Subnet-10
+    - Inbound Rules
+    - Outbound Rules
+  - Executive-ACL > Executive-Subnet > 20
+    - Inbound Rules
+    - Outbound Rules
