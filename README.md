@@ -18,19 +18,84 @@
 - Network ACL
   - Admin-ACL > Admin-Subnet-10
     - Inbound Rules
+      - SSH > Port 22 > 10.0.50.0/24 (IT Subnet)
+      - HTTP > Port 80 > 0.0.0.0/0
+      - HTTPS > Port 443 > 0.0.0.0/0
+      - RDP (Remote Desktop Protocol) > Port 3389 > 10.0.50.0/24 (IT Subnet)
+      - Ephemeral > Ports 1024-65535 > 0.0.0.0/0
+      - Internal VPC Communication > All > 10.0.0.0/16
     - Outbound Rules
+      - HTTP > Port 80 > 0.0.0.0/0
+      - HTTPS > Port 443 > 0.0.0.0/0
+      - Ephemeral > Ports 1024-65535 > 0.0.0.0/0
+      - Internal VPC Communication > All > 10.0.0.0/16
   - Executive-ACL > Executive-Subnet-20
     - Inbound Rules
+      - SSH > Port 22 > 10.0.50.0/24 (IT Subnet)
+      - HTTP > Port 80 > 0.0.0.0/0
+      - HTTPS > Port 443 > 0.0.0.0/0
+      - RDP (Remote Desktop Protocol) > Port 3389 > 10.0.50.0/24 (IT Subnet)
+      - Ephemeral > Ports 1024-65535 > 0.0.0.0/0
+      - Internal VPC Communication > All > 10.0.0.0/16
     - Outbound Rules
+      - HTTP > Port 80 > 0.0.0.0/0
+      - HTTPS > Port 443 > 0.0.0.0/0
+      - Ephemeral > Ports 1024-65535 > 0.0.0.0/0
+      - Internal VPC Communication > All > 10.0.0.0/16
   - Marketing-ACL > Marketing-Subnet-30
     - Inbound Rules
+      - SSH > Port 22 > 10.0.50.0/24 (IT Subnet)
+      - HTTP > Port 80 > 0.0.0.0/0
+      - HTTPS > Port 443 > 0.0.0.0/0
+      - Ephemeral > Ports 1024-65535 > 0.0.0.0/0
+      - Admin Subnet Access > All > 10.0.10.0/24
+      - IT Subnet Access > All > 10.0.50.0/24
+      - Block Accounting Subnet > All > 10.0.60.0/24
+      - Block Sales Subnet > All > 10.0.40.0/24
+      - Internal VPC Communication > All > 10.0.0.0/16
     - Outbound Rules
+      - HTTP > Port 80 > 0.0.0.0/0
+      - HTTPS > Port 443 > 0.0.0.0/0
+      - Ephemeral > Ports 1024-65535 > 0.0.0.0/0
+      - Block Accounting Subnet > 10.0.60.0/24
+      - Block Sales Subnet > 10.0.40.0/24
+      - Internal VPC Communication > All > 10.0.0.0/16
   - Sales-ACL > Sales-Subnet-40
     - Inbound Rules
+      - SSH > Port 22 > 10.0.50.0/24 (IT Subnet)
+      - HTTP > Port 80 > 0.0.0.0/0
+      - HTTPS > Port 443 > 0.0.0.0/0
+      - Ephemeral > Ports 1024-65535 > 0.0.0.0/0
+      - Internal VPC Communication > All > 10.0.0.0/16
     - Outbound Rules
+      - HTTP > Port 80 > 0.0.0.0/0
+      - HTTPS > Port 443 > 0.0.0.0/0
+      - Ephemeral > Ports 1024-65535 > 0.0.0.0/0
+      - Internal VPC Communication > All > 10.0.0.0/16
   - IT-ACL > IT-Subnet-50
     - Inbound Rules
+      - SSH > Port 22 > 10.0.50.0/24 (IT Subnet)
+      - HTTP > Port 80 > 0.0.0.0/0
+      - HTTPS > Port 443 > 0.0.0.0/0
+      - RDP (Remote Desktop Protocol) > Port 3389 > 10.0.50.0/24 (IT Subnet)
+      - Ephemeral > Ports 1024-65535 > 0.0.0.0/0
+      - Internal VPC Communication > All > 10.0.0.0/16
     - Outbound Rules
+      - SSH > Port 22 > 10.0.0.0/16 (Connection to all Subnets)
+      - HTTP > Port 80 > 0.0.0.0/0
+      - HTTPS > Port 443 > 0.0.0.0/0
+      - Ephemeral > Ports 1024-65535 > 0.0.0.0/0
+      - Internal VPC Communication > All > 10.0.0.0/16
   - Accounting-ACL > Accounting-Subnet-60
     - Inbound Rules
+      - SSH > Port 22 > 10.0.50.0/24 (IT Subnet)
+      - HTTP > Port 80 > 0.0.0.0/0
+      - HTTPS > Port 443 > 0.0.0.0/0
+      - RDP (Remote Desktop Protocol) > Port 3389 > 10.0.50.0/24 (IT Subnet)
+      - Ephemeral > Ports 1024-65535 > 0.0.0.0/0
+      - Internal VPC Communication > All > 10.0.0.0/16
     - Outbound Rules
+      - HTTP > Port 80 > 0.0.0.0/0
+      - HTTPS > Port 443 > 0.0.0.0/0
+      - Ephemeral > Ports 1024-65535 > 0.0.0.0/0
+      - Internal VPC Communication > All > 10.0.0.0/16
