@@ -19,6 +19,18 @@
   - Admin-ACL > Admin-Subnet-10
     - Inbound Rules
     - Outbound Rules
-  - Executive-ACL > Executive-Subnet > 20
+  - Executive-ACL > Executive-Subnet-20
+    - Inbound Rules
+    - Outbound Rules
+  - Marketing-ACL > Marketing-Subnet-30
+    - Inbound Rules
+    - Outbound Rules
+  - Sales-ACL > Sales-Subnet-40
+    - Inbound Rules
+    - Outbound Rules
+  - IT-ACL > IT-Subnet-50
+    - Inbound Rules
+    - Outbound Rules
+  - Accounting-ACL > Accounting-Subnet-60
     - Inbound Rules
     - Outbound Rules
