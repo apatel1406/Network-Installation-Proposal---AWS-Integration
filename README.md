@@ -100,7 +100,7 @@
       - Ephemeral > Ports 1024-65535 > 0.0.0.0/0
       - Internal VPC Communication > All > 10.0.0.0/16
 - Security Groups
-   - SG-Admin > Admin-Subnet-10
+   - Admin-SG > Admin-Subnet-10
       - Inbound Rules
          - SSH > Port 22 > 10.0.50.0/24 (IT Subnet)
          - HTTP > Port 80 > 0.0.0.0/0
@@ -113,7 +113,7 @@
          - HTTPS > Port 443 > 0.0.0.0/0
          - Ephemeral > Ports 1024-65535 > 0.0.0.0/0
          - Internal VPC Communication > All > 10.0.0.0/16
-   - SG-Executive > Executive-Subnet-20
+   - Executive-SG > Executive-Subnet-20
       - Inbound Rules
          - SSH > Port 22 > 10.0.50.0/24 (IT Subnet)
          - HTTP > Port 80 > 0.0.0.0/0
@@ -126,7 +126,7 @@
          - HTTPS > Port 443 > 0.0.0.0/0
          - Ephemeral > Ports 1024-65535 > 0.0.0.0/0
          - Internal VPC Communication > All > 10.0.0.0/16
-   - SG-Marketing > Marketing-Subnet-30
+   - Marketing-SG > Marketing-Subnet-30
       - Inbound Rules
          - SSH > Port 22 > 10.0.50.0/24 (IT Subnet)
          - HTTP > Port 80 > 0.0.0.0/0
@@ -142,7 +142,7 @@
          - Block Accounting Subnet > All > 10.0.60.0/24 (DENY)
          - Block Sales Subnet > All > 10.0.40.0/24 (DENY)
          - Internal VPC Communication > All > 10.0.0.0/16
-   - SG-Sales > Sales-Subnet-40
+   - Sales-SG > Sales-Subnet-40
       - Inbound Rules
          - SSH > Port 22 > 10.0.50.0/24 (IT Subnet)
          - HTTP > Port 80 > 0.0.0.0/0
@@ -154,7 +154,7 @@
          - HTTPS > Port 443 > 0.0.0.0/0
          - Ephemeral > Ports 1024-65535 > 0.0.0.0/0
          - Internal VPC Communication > All > 10.0.0.0/16
-   - SG-IT > IT-Subnet-50
+   - IT-SG > IT-Subnet-50
       - Inbound Rules
          - SSH > Port 22 > 10.0.50.0/24 (IT Subnet)
          - HTTP > Port 80 > 0.0.0.0/0
@@ -168,7 +168,7 @@
          - HTTPS > Port 443 > 0.0.0.0/0
          - Ephemeral > Ports 1024-65535 > 0.0.0.0/0
          - Internal VPC Communication > All > 10.0.0.0/16
-   - SG-Accounting > Accounting-Subnet-60
+   - Accounting-SG > Accounting-Subnet-60
       - Inbound Rules
          - SSH > Port 22 > 10.0.50.0/24 (IT Subnet)
          - HTTP > Port 80 > 0.0.0.0/0
