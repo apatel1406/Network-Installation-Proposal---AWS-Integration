@@ -181,3 +181,22 @@
          - HTTPS > Port 443 > 0.0.0.0/0
          - Ephemeral > Ports 1024-65535 > 0.0.0.0/0
          - Internal VPC Communication > All > 10.0.0.0/16
+- EC2 Instance
+  - Instance 1
+    - File-Server
+      - Ubuntu 26.04
+      - t3.micro (Small for scale)
+      - Subnet > Admin-Subnet-10
+      - Security Group > Admin-SG
+  - Instance 2
+    - Primary-Database
+      - Ubuntu 26.04
+      - t3.micro (Small for scale)
+      - Subnet > Admin-Subnet-10
+      - Security Group > Admin-SG
+  - Instance 2
+    - Backup-Database
+      - Ubuntu 26.04
+      - t3.micro (Small for scale)
+      - Subnet > Admin-Subnet-10
+      - Security Group > Admin-SG
