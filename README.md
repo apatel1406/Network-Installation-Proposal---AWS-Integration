@@ -200,3 +200,15 @@
       - t3.micro (Small for scale)
       - Subnet > Admin-Subnet-10
       - Security Group > Admin-SG
+- IAM (Identity and Access Management)
+   - Groups
+     - Executive-Group
+       - Users
+         - President-CEO
+         - Sr-Vice-President
+         - Executive-Assistant-1
+         - Executive-Assistant-2
+        - Policies
+          - S3 > Read Only > All Buckets
+          - EFS > Read Only > All Department File Systems
+          - RDS > Read Only > Primary-Database
