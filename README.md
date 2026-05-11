@@ -212,3 +212,37 @@
           - S3 > Read Only > All Buckets
           - EFS > Read Only > All Department File Systems
           - RDS > Read Only > Primary-Database
+     - Marketing-Group
+       - Users
+         - Marketing-Director
+         - Marketing-Team-Lead
+         - Marketing-Team-Member-1
+         - Marketing-Team-Member-2
+         - Marketing-Team-Member-3
+         - Marketing-Team-Member-4
+         - Marketing-Team-Member-5
+     - Sales-Group
+       - Users
+         - Sales-Director
+         - Sales-Team-Lead
+         - Sales-Team-Member-1
+         - Sales-Team-Member-2
+         - Sales-Team-Member-3
+         - Sales-Team-Member-4
+         - Sales-Team-Member-5
+         - Sales-Team-Member-6
+         - Sales-Team-Member-7
+     - IT-Group
+       - Users
+         - T-Director
+         - IT-Team-Lead
+         - IT-Support-1
+         - IT-Support-2
+     - Accounting-Group
+       - Users
+         - Accounting-Director
+         - Accounting-Team-Lead
+         - Accounting-Team-1
+         - Accounting-Team-2
+         - Shipping-Team-1
+         - Shipping-Team-2
